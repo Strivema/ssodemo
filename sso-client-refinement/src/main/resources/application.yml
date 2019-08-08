@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /refinement
+security:
+  oauth2:
+    client:
+      client-id: Refinement
+      client-secret: order123
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8080/oauth/token_key
